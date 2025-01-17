@@ -36,8 +36,8 @@ The following GHCi session shows some of the basic sequence functionality::
 
 
     -- Put two sequences together.
-    (Seq.fromList [-2, -1]) >< nums
-    > fromList [-2,-1,0,1,2]
+    (Seq.fromList [-3, -2, -1, 0]) >< nums
+    > fromList [-3,-2,-1,0,1,2,3]
 
 
     -- Check if a sequence is empty and check the length.
@@ -53,7 +53,7 @@ The following GHCi session shows some of the basic sequence functionality::
     > Just 3
 
     -- Or the unsafe version, you MUST check length beforehand.
-    Seq.index 2 nums
+    Seq.index nums 2
     > 3
 
 
